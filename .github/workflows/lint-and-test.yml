@@ -13,8 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      # the package.json name purposely contains invalid characters for templating
+      # so temporarily set it to something valid to run yarn commands
       - run: |
           cd {{cookiecutter.project_name}}
+          npm pkg set 'name'='testing'
           yarn
           yarn lint
           yarn test
