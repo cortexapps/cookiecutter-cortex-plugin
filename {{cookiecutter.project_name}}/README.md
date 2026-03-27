@@ -1,5 +1,7 @@
 # {{ cookiecutter.project_name }}
 
+README EDIT!
+
 {{ cookiecutter.project_name }} is a [Cortex](https://www.cortex.io/) plugin. To see how to run the plugin inside of Cortex, see [our docs](https://docs.cortex.io/docs/plugins).
 
 ### Prerequisites
